@@ -22,7 +22,7 @@ files = ['kingchat.php','profilewfc.php','awaylist.php','hmflags.php','profilesk
 AJAXChat = ["MyBB AJAX Chat", "1.0", "XSS", "https://www.exploit-db.com/exploits/23354/"]
 kingchat = ["MyBB Kingchat", "1.0", "XSS & SQL Injection", "https://www.exploit-db.com/exploits/23249/ \nhttps://www.exploit-db.com/exploits/23105/"]
 profilewfc = ["MyBB Profile Wii Friend", "1.0", "SQL UPDATE Injection & XSS", "https://www.exploit-db.com/exploits/23888/"]
-awaylist  = ["MyBB AwayList", "Unknown", "SQL Injection", "https://www.exploit-db.com/exploits/23625/"]
+awaylist  = ["MyBB AwayList", "1.6.7", "SQL Injection", "https://www.exploit-db.com/exploits/23625/"]
 hmflags = ["MyBB HM My Country Flags", "Unknown", "SQL Injection", "https://www.exploit-db.com/exploits/23624/"]
 profileskype = ["MyBB Profile Skype ID", "1.0", "SQL Injection & XSS", "https://www.exploit-db.com/exploits/23425/"]
 socialsites = ["MyBB Social Sites", "0.2.2", "XSS", "https://www.exploit-db.com/exploits/23382/"]
@@ -45,7 +45,7 @@ banner()
 time.sleep(2)
 
 print "-"*60
-print color.green+"Example:"+color.end+" MyBBwebsite.com"
+print color.green+"Example:"+color.end+" MyBBforum.com or subdomain.MyBBforum.com"
 print "-"*60
 
 site = raw_input(color.green+"Enter MyBB forum URL-> "+color.end)
@@ -184,6 +184,5 @@ def scan(site, upload):
 for upload in files:
 	scan(site, upload)
 
-print color.green+"\nScan complete!"+color.end
-print "Press ENTER to exit"
-raw_input()
+print color.green+"\nScan complete! \n"+color.end
+exit()
