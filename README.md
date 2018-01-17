@@ -1,2 +1,2 @@
 # MyBBscan
-Scans '/inc/plugins/' directory for known vulnerable plugins.
+Scans `/inc/plugins/` directory for known vulnerable plugins.
