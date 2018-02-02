@@ -40,7 +40,7 @@ afsignatures = ["MyBB Advanced Forum Signatures", "2.0.4", "SQL Injection", "htt
 mytabs = ["MyBB MyTabs", "1.32", "SQL Injection", "https://www.exploit-db.com/exploits/17595/"]
 
 def banner():
-	print color.green+"MyBBscan\n"+color.end+"By: "+color.blue+"root "+color.end+"from "+color.blue+"https://HackRally.net\n"+color.end
+	print color.green+"MyBBscan\n"+color.end+"By: "+color.blue+"root "+color.end+"from "+color.blue+"https://LuxorForums.com\n"+color.end
 banner()
 time.sleep(2)
 
@@ -54,7 +54,7 @@ print (color.green+"[*] Scanning "+color.end+"{}...\n").format(site)
 print "-"*60
 
 def connection_status(site, plugin_file):
-    connection = httplib.HTTPConnection(site)
+    connection = httplib.HTTPSConnection(site)
     connection.request("HEAD", plugin_file)
     return connection.getresponse().status
 
