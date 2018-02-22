@@ -1,10 +1,8 @@
 #!/usr/bin/python
-
 import sys
 import os
 import httplib
 import time
-
 
 
 class color:
@@ -17,7 +15,8 @@ class color:
 
 files = ['kingchat.php','profilewfc.php','awaylist.php','hmflags.php','profileskype.php','socialsites.php',
 'dymy_ua.php','profilefacebook.php','AJAXChat.php','youtube.php','tipsoftheday.php','profileblogs.php',
-'bank.php','SuscribeUsers.php','profilealbums.php','mystatus.php','userbarplugin.php','afsignatures.php','mytabs.php','usersocial.php','myawards.php']
+'bank.php','SuscribeUsers.php','profilealbums.php','mystatus.php','userbarplugin.php','afsignatures.php',
+'mytabs.php','usersocial.php','myawards.php', 'myarcade.php']
 
 AJAXChat = ["MyBB AJAX Chat", "1.0", "XSS", "https://www.exploit-db.com/exploits/23354/"]
 kingchat = ["MyBB Kingchat", "1.0", "XSS & SQL Injection", "https://www.exploit-db.com/exploits/23249/ \nhttps://www.exploit-db.com/exploits/23105/"]
@@ -40,9 +39,10 @@ afsignatures = ["MyBB Advanced Forum Signatures", "2.0.4", "SQL Injection", "htt
 mytabs = ["MyBB MyTabs", "1.32", "SQL Injection", "https://www.exploit-db.com/exploits/17595/"]
 socialnetworks = ["MyBB User Social Networks", "1.2", "XSS", "https://www.exploit-db.com/exploits/34539/"]
 myawards = ["MyBB MyAwards", "2.3", "Cross-Site Request Forgery", "https://www.exploit-db.com/exploits/39290/"]
+myarcade = ["MyBB My Arcade", "1.3", "Persistant XSS", " "]
 
 def banner():
-	print color.green+"MyBBscan\n"+color.end+"By: "+color.blue+"root "+color.end+"from "+color.blue+"https://LuxorForums.com\n"+color.end
+	print color.green+"MyBBscan\n"+color.end+"By: "+color.blue+"0xB9 "+color.end+"from "+color.blue+"https://LuxorForums.com\n"+color.end
 banner()
 time.sleep(2)
 
@@ -190,6 +190,12 @@ def scan(site, upload):
 			print "Vulnerability Type: "+myawards[2]
 			print "Information: "+myawards[3]
 			print "-"*60
+		elif upload == "myarcade.php":
+			print color.red+"[*] Warning! \n"+color.end+"Vulnerable Plugin: "+myarcade[0]
+			print "Version: "+myarcade[1]
+			print "Vulnerability Type: "+myarcade[2]
+			print "Information: "+myarcade[3]
+			print "-"*60 	
 		else:
 			pass
 	else:
