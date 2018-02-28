@@ -39,7 +39,7 @@ afsignatures = ["MyBB Advanced Forum Signatures", "2.0.4", "SQL Injection", "htt
 mytabs = ["MyBB MyTabs", "1.32", "SQL Injection", "https://www.exploit-db.com/exploits/17595/"]
 socialnetworks = ["MyBB User Social Networks", "1.2", "XSS", "https://www.exploit-db.com/exploits/34539/"]
 myawards = ["MyBB MyAwards", "2.3", "Cross-Site Request Forgery", "https://www.exploit-db.com/exploits/39290/"]
-myarcade = ["MyBB My Arcade", "1.3", "Persistant XSS", " "]
+myarcade = ["MyBB My Arcade", "1.3", "Persistant XSS", "https://www.exploit-db.com/exploits/44186/"]
 
 def banner():
 	print color.green+"MyBBscan\n"+color.end+"By: "+color.blue+"0xB9 "+color.end+"from "+color.blue+"https://LuxorForums.com\n"+color.end
@@ -191,11 +191,11 @@ def scan(site, upload):
 			print "Information: "+myawards[3]
 			print "-"*60
 		elif upload == "myarcade.php":
-			print color.red+"[*] Warning! \n"+color.end+"Vulnerable Plugin: "+myarcade[0]
+			print color.yellow+"[*] Possible Vulnerable Plugin! \n"+color.end+"Vulnerable Plugin: "+myarcade[0]
 			print "Version: "+myarcade[1]
 			print "Vulnerability Type: "+myarcade[2]
 			print "Information: "+myarcade[3]
-			print "-"*60 	
+			print "-"*60
 		else:
 			pass
 	else:
