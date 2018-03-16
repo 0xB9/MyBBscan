@@ -16,7 +16,7 @@ class color:
 files = ['kingchat.php','profilewfc.php','awaylist.php','hmflags.php','profileskype.php','socialsites.php',
 'dymy_ua.php','profilefacebook.php','AJAXChat.php','youtube.php','tipsoftheday.php','profileblogs.php',
 'bank.php','SuscribeUsers.php','profilealbums.php','mystatus.php','userbarplugin.php','afsignatures.php',
-'mytabs.php','usersocial.php','myawards.php', 'myarcade.php']
+'mytabs.php','usersocial.php','myawards.php', 'myarcade.php', 'tlink.php']
 
 AJAXChat = ["AJAX Chat", "1.0", "XSS", "https://www.exploit-db.com/exploits/23354/"]
 kingchat = ["Kingchat", "1.0", "XSS & SQL Injection", "https://www.exploit-db.com/exploits/23249/ \nhttps://www.exploit-db.com/exploits/23105/"]
@@ -40,6 +40,7 @@ mytabs = ["MyTabs", "1.32", "SQL Injection", "https://www.exploit-db.com/exploit
 socialnetworks = ["User Social Networks", "1.2", "XSS", "https://www.exploit-db.com/exploits/34539/"]
 myawards = ["MyAwards", "2.3", "Cross-Site Request Forgery", "https://www.exploit-db.com/exploits/39290/"]
 myarcade = ["My Arcade", "1.3", "Persistant XSS", "https://www.exploit-db.com/exploits/44186/"]
+tlink = ["Threads to Link", "1.3", "Persistant XSS", " "]
 
 def banner():
 	print color.green+"MyBBscan\n"+color.end+"By: "+color.blue+"0xB9 "+color.end+"from "+color.blue+"https://LuxorForums.com\n"+color.end
@@ -196,6 +197,12 @@ def scan(site, upload):
 			print "Vulnerability Type: "+myarcade[2]
 			print "Information: "+myarcade[3]
 			print "-"*60
+		elif upload == "tlink.php":
+			print color.yellow+"[*] Possible Vulnerable Plugin! \n"+color.end+"Vulnerable Plugin: "+tlink[0]
+			print "Version: "+tlink[1]
+			print "Vulnerability Type: "+tlink[2]
+			print "Information: "+tlink[3]
+			print "-"*60	
 		else:
 			pass
 	else:
