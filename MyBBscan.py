@@ -41,7 +41,7 @@ socialnetworks = ["User Social Networks", "1.2", "XSS", "https://www.exploit-db.
 myawards = ["MyAwards", "2.3", "Cross-Site Request Forgery", "https://www.exploit-db.com/exploits/39290/"]
 myarcade = ["My Arcade", "1.3", "Persistant XSS", "https://www.exploit-db.com/exploits/44186/"]
 tlink = ["Threads to Link", "1.3", "Persistant XSS", " "]
-lastthreadsprofile = ["Last User's Threads in Profile", "1.2", "Persistant XSS", " "]
+lastthreadsprofile = ["Last User's Threads in Profile", "1.2", "Persistant XSS", "https://www.exploit-db.com/exploits/44339/"]
 
 def banner():
 	print color.green+"MyBBscan\n"+color.end+"By: "+color.blue+"0xB9 "+color.end+"from "+color.blue+"https://LuxorForums.com\n"+color.end
@@ -209,7 +209,7 @@ def scan(site, upload):
 			print "Version: "+lastthreadsprofile[1]
 			print "Vulnerability Type: "+lastthreadsprofile[2]
 			print "Information: "+lastthreadsprofile[3]
-			print "-"*60	
+			print "-"*60
 		else:
 			pass
 	else:
