@@ -15,13 +15,12 @@ class color:
 
 files = ['mytabs.php','usersocial.php','myawards.php','myarcade.php','tlink.php','mybbirlastthreadsprofile.php']
 
-# Variable # 		# Title #					    # Version #    # Type #							# Information #
-mytabs  		  =	["MyTabs",                         "1.32", "SQL Injection",        "https://www.exploit-db.com/exploits/17595/"]
-socialnetworks    =	["User Social Networks",           "1.2",  "Cross-Site Scripting", "https://www.exploit-db.com/exploits/34539/"]
-myawards  		  =	["MyAwards",                       "2.3",  "CSRF",                 "https://www.exploit-db.com/exploits/39290/"]
-myarcade  		  =	["My Arcade",                      "1.3",  "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44186/"]
-tlink 	          = ["Threads to Link",                "1.3"   "Cross-Site Scripting", "Awaiting..."]
-lastthreadprofile = ["Last User's Threads in Profile", "1.2",  "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44339/"]
+mytabs = ["MyTabs", "1.32", "SQL Injection", "https://www.exploit-db.com/exploits/17595/"]
+socialnetworks = ["User Social Networks", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/34539/"]
+myawards = ["MyAwards", "2.3", "CSRF", "https://www.exploit-db.com/exploits/39290/"]
+myarcade = ["My Arcade", "1.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44186/"]
+tlink = ["Threads to Link", "1.3", "Cross-Site Scripting", "Awaiting..."]
+lastthreadprofile = ["Last User's Threads in Profile", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44339/"]
 
 def banner():
 	print color.green+"MyBBscan\n"+color.end+"By: "+color.blue+"0xB9 "+color.end+"from "+color.blue+"https://LuxorForums.com\n"+color.end
