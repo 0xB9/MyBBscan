@@ -13,7 +13,7 @@ class color:
 	grey = '\033[90m'
 	end = '\033[0m'
 
-files = ['mytabs.php','usersocial.php','myawards.php','myarcade.php','tlink.php','mybbirlastthreadsprofile.php']
+files = ['mytabs.php','usersocial.php','myawards.php','myarcade.php','tlink.php','mybbirlastthreadsprofile.php','downloads.php']
 
 mytabs = ["MyTabs", "1.32", "SQL Injection", "https://www.exploit-db.com/exploits/17595/"]
 socialnetworks = ["User Social Networks", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/34539/"]
@@ -21,6 +21,7 @@ myawards = ["MyAwards", "2.3", "CSRF", "https://www.exploit-db.com/exploits/3929
 myarcade = ["My Arcade", "1.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44186/"]
 tlink = ["Threads to Link", "1.3", "Cross-Site Scripting", "Awaiting..."]
 lastthreadprofile = ["Last User's Threads in Profile", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44339/"]
+downloads = ["Downloads", "2.0.3", "Cross-Site Scripting", "Awaiting..."]
 
 def banner():
 	print color.green+"MyBBscan\n"+color.end+"By: "+color.blue+"0xB9 "+color.end+"from "+color.blue+"https://LuxorForums.com\n"+color.end
@@ -80,6 +81,12 @@ def scan(site, upload):
 			print "Version: "+lastthreadsprofile[1]
 			print "Vulnerability Type: "+lastthreadsprofile[2]
 			print "Information: "+lastthreadsprofile[3]
+			print "-"*60
+		elif upload == "downloads.php":
+			print color.yellow+"[*] Possible Vulnerable Plugin! \n"+color.end+"Vulnerable Plugin: "+downloads[0]
+			print "Version: "+downloads[1]
+			print "Vulnerability Type: "+downloads[2]
+			print "Information: "+downloads[3]
 			print "-"*60
 		else:
 			pass
