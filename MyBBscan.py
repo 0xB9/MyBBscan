@@ -47,43 +47,50 @@ def scan(site, upload):
 	status = connection_status(site, "/inc/plugins/"+upload)
 	if status == 200:
 		if upload == "mytabs.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin! \n"+color.end+"Vulnerable Plugin: "+mytabs[0]
+			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print "Vulnerable Plugin: "+mytabs[0]
 			print "Version: "+mytabs[1]
 			print "Vulnerability Type: "+mytabs[2]
 			print "Information: "+mytabs[3]
 			print "-"*60
 		elif upload == "usersocial.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin! \n"+color.end+"Vulnerable Plugin: "+socialnetworks[0]
+			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print "Vulnerable Plugin: "+socialnetworks[0]
 			print "Version: "+socialnetworks[1]
 			print "Vulnerability Type: "+socialnetworks[2]
 			print "Information: "+socialnetworks[3]
 			print "-"*60
 		elif upload == "myawards.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin! \n"+color.end+"Vulnerable Plugin: "+myawards[0]
+			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print "Vulnerable Plugin: "+myawards[0]
 			print "Version: "+myawards[1]
 			print "Vulnerability Type: "+myawards[2]
 			print "Information: "+myawards[3]
 			print "-"*60
 		elif upload == "myarcade.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin! \n"+color.end+"Vulnerable Plugin: "+myarcade[0]
+			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print "Vulnerable Plugin: "+myarcade[0]
 			print "Version: "+myarcade[1]
 			print "Vulnerability Type: "+myarcade[2]
 			print "Information: "+myarcade[3]
 			print "-"*60
 		elif upload == "tlink.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin! \n"+color.end+"Vulnerable Plugin: "+tlink[0]
+			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print "Vulnerable Plugin: "+tlink[0]
 			print "Version: "+tlink[1]
 			print "Vulnerability Type: "+tlink[2]
 			print "Information: "+tlink[3]
 			print "-"*60
 		elif upload == "mybbirlastthreadsprofile.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin! \n"+color.end+"Vulnerable Plugin: "+lastthreadsprofile[0]
+			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print "Vulnerable Plugin: "+lastthreadsprofile[0]
 			print "Version: "+lastthreadsprofile[1]
 			print "Vulnerability Type: "+lastthreadsprofile[2]
 			print "Information: "+lastthreadsprofile[3]
 			print "-"*60
 		elif upload == "downloads.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin! \n"+color.end+"Vulnerable Plugin: "+downloads[0]
+			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print "Vulnerable Plugin: "+downloads[0]
 			print "Version: "+downloads[1]
 			print "Vulnerability Type: "+downloads[2]
 			print "Information: "+downloads[3]
