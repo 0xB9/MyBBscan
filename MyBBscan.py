@@ -22,7 +22,7 @@ myawards = ["MyAwards", "2.3", "CSRF", "https://www.exploit-db.com/exploits/3929
 myarcade = ["My Arcade", "1.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44186/"]
 tlink = ["Threads to Link", "1.3", "Cross-Site Scripting", "Awaiting..."]
 lastthreadprofile = ["Last User's Threads in Profile", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44339/"]
-downloads = ["Downloads", "2.0.3", "Cross-Site Scripting", "Awaiting..."]
+downloads = ["Downloads", "2.0.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44400/"]
 mc_mycode = ["Minecraft Crafting MyCode", "1.2", "Cross-Site Scripting", "[item=10;item da craftare]\')\"onclick=\"alert(\'test\');\" [/item]"]
 
 def banner():
