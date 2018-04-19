@@ -1,6 +1,4 @@
 #!/usr/bin/python
-import sys
-import os
 import httplib
 import time
 
