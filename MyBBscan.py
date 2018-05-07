@@ -18,7 +18,7 @@ mytabs = ["MyTabs", "1.32", "SQL Injection", "https://www.exploit-db.com/exploit
 socialnetworks = ["User Social Networks", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/34539/"]
 myawards = ["MyAwards", "2.3", "CSRF", "https://www.exploit-db.com/exploits/39290/"]
 myarcade = ["My Arcade", "1.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44186/"]
-tlink = ["Threads to Link", "1.3", "Cross-Site Scripting", "https://github.com/0xB9/My-Exploits/blob/master/MyBB-Threads_to_Link-XSS.txt"]
+tlink = ["Threads to Link", "1.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44547/"]
 lastthreadprofile = ["Last User's Threads in Profile", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44339/"]
 downloads = ["Downloads", "2.0.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44400/"]
 mc_mycode = ["Minecraft Crafting MyCode", "1.2", "Cross-Site Scripting", "[item=10;item da craftare]\')\"onclick=\"alert(\'test\');\" [/item]"]
