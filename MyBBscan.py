@@ -12,7 +12,7 @@ class color:
 	end = '\033[0m'
 
 files = ['mytabs.php','usersocial.php','myawards.php','myarcade.php','tlink.php','mybbirlastthreadsprofile.php','downloads.php',
-		'mc_craft.php','lpop.php']
+		'mc_craft.php','lpop.php', 'adminnotes.php']
 
 mytabs = ["MyTabs", "1.32", "SQL Injection", "https://www.exploit-db.com/exploits/17595/"]
 socialnetworks = ["User Social Networks", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/34539/"]
@@ -23,6 +23,7 @@ lastthreadprofile = ["Last User's Threads in Profile", "1.2", "Cross-Site Script
 downloads = ["Downloads", "2.0.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44400/"]
 mc_mycode = ["Minecraft Crafting MyCode", "1.2", "Cross-Site Scripting", "[item=10;item da craftare]\')\"onclick=\"alert(\'test\');\" [/item]"]
 lpop = ["Latest Post on Profile", "1.1", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44608/"]
+adminnotes = ["Admin Notes", "1.1", "CSRF", "awaiting..."]
 
 def banner():
 	print color.green+"MyBBscan\n"+color.end+"By: "+color.blue+"0xB9 "+color.end+"from "+color.blue+"https://LuxorForums.com\n"+color.end
@@ -109,6 +110,13 @@ def scan(site, upload):
 			print "Version: "+lpop[1]
 			print "Vulnerability Type: "+lpop[2]
 			print "Information: "+lpop[3]
+			print "-"*60
+		elif upload == "adminnotes.php":
+			print color.yellow+"[*] Possibble Vulnerable Plugin!"+color.end
+			print "Vulnerable Plugin: "+adminnotes[0]
+			print "Version: "+adminnotes[1]
+			print "Vulnerability Type: "+adminnotes[2]
+			print "Information: "+adminnotes[3]
 			print "-"*60
 		else:
 			pass
