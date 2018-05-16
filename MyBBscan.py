@@ -12,7 +12,7 @@ class color:
 	end = '\033[0m'
 
 files = ['mytabs.php','usersocial.php','myawards.php','myarcade.php','tlink.php','mybbirlastthreadsprofile.php','downloads.php',
-		'mc_craft.php','lpop.php', 'adminnotes.php']
+		'recentthread.php','mc_craft.php','lpop.php', 'adminnotes.php']
 
 mytabs = ["MyTabs", "1.32", "SQL Injection", "https://www.exploit-db.com/exploits/17595/"]
 socialnetworks = ["User Social Networks", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/34539/"]
@@ -21,6 +21,7 @@ myarcade = ["My Arcade", "1.3", "Cross-Site Scripting", "https://www.exploit-db.
 tlink = ["Threads to Link", "1.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44547/"]
 lastthreadprofile = ["Last User's Threads in Profile", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44339/"]
 downloads = ["Downloads", "2.0.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44400/"]
+recentThreadIndex = ["Recent Threads On Index", "17.0", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44420/"]
 mc_mycode = ["Minecraft Crafting MyCode", "1.2", "Cross-Site Scripting", "[item=10;item da craftare]\')\"onclick=\"alert(\'test\');\" [/item]"]
 lpop = ["Latest Post on Profile", "1.1", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44608/"]
 adminnotes = ["Admin Notes", "1.1", "CSRF", "awaiting..."]
@@ -97,6 +98,13 @@ def scan(site, upload):
 			print "Vulnerability Type: "+downloads[2]
 			print "Information: "+downloads[3]
 			print "-"*60
+		elif upload == "recentthread.php":
+			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print "Vulnerable Plugin: "+recentThreadIndex[0]
+			print "Version: "+recentThreadIndex[1]
+			print "Vulnerability Type: "+recentThreadIndex[2]
+			print "Information: "+recentThreadIndex[3]
+			print "-"*60	
 		elif upload == "mc_craft.php":
 			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
 			print "Vulnerable Plugin: "+mc_mycode[0]
