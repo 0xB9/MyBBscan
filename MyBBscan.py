@@ -24,7 +24,7 @@ downloads = ["Downloads", "2.0.3", "Cross-Site Scripting", "https://www.exploit-
 recentThreadIndex = ["Recent Threads On Index", "17.0", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44420/"]
 minecraftMyCode = ["Minecraft Crafting MyCode", "1.2", "Cross-Site Scripting", "[item=10;item da craftare]\')\"onclick=\"alert(\'test\');\" [/item]"]
 latestPostProfile = ["Latest Post on Profile", "1.1", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44608/"]
-adminNotes = ["Admin Notes", "1.1", "CSRF", "awaiting..."]
+adminNotes = ["Admin Notes", "1.1", "CSRF", "https://www.exploit-db.com/exploits/44624/"]
 
 def banner():
 	print color.green+"MyBBscan\n"+color.end+"By: "+color.blue+"0xB9 "+color.end+"from "+color.blue+"https://LuxorForums.com\n"+color.end
