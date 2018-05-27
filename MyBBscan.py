@@ -19,7 +19,7 @@ socialNetworks = ["User Social Networks", "1.2", "Cross-Site Scripting", "https:
 myAwards = ["MyAwards", "2.3", "CSRF", "https://www.exploit-db.com/exploits/39290/"]
 myArcade = ["My Arcade", "1.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44186/"]
 threadToLink = ["Threads to Link", "1.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44547/"]
-lastThreadProfile = ["Last User's Threads in Profile", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44339/"]
+lastThreadsProfile = ["Last User's Threads in Profile", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44339/"]
 downloads = ["Downloads", "2.0.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44400/"]
 recentThreadIndex = ["Recent Threads On Index", "17.0", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44420/"]
 minecraftMyCode = ["Minecraft Crafting MyCode", "1.2", "Cross-Site Scripting", "[item=10;item da craftare]\')\"onclick=\"alert(\'test\');\" [/item]"]
@@ -133,7 +133,7 @@ def scan(site, upload):
 			print "Version: "+modNotes[1]
 			print "Vulnerability Type: "+modNotes[2]
 			print "Information: "+modNotes[3]
-			print "-"*60	
+			print "-"*60
 		else:
 			pass
 	else:
