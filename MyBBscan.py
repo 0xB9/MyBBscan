@@ -12,7 +12,7 @@ class color:
 	end = '\033[0m'
 
 files = ['mytabs.php','usersocial.php','myawards.php','myarcade.php','tlink.php','mybbirlastthreadsprofile.php','downloads.php',
-		'recentthread.php','mc_craft.php','lpop.php','adminnotes.php','modnoteslog.php']
+		'recentthread.php','lpop.php','adminnotes.php','modnoteslog.php']
 
 myTabs = ["MyTabs", "1.32", "SQL Injection", "https://www.exploit-db.com/exploits/17595/"]
 socialNetworks = ["User Social Networks", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/34539/"]
@@ -22,7 +22,6 @@ threadToLink = ["Threads to Link", "1.3", "Cross-Site Scripting", "https://www.e
 lastThreadsProfile = ["Last User's Threads in Profile", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44339/"]
 downloads = ["Downloads", "2.0.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44400/"]
 recentThreadIndex = ["Recent Threads On Index", "17.0", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44420/"]
-minecraftMyCode = ["Minecraft Crafting MyCode", "1.2", "Cross-Site Scripting", "[item=10;item da craftare]\')\"onclick=\"alert(\'test\');\" [/item]"]
 latestPostProfile = ["Latest Post on Profile", "1.1", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44608/"]
 adminNotes = ["Admin Notes", "1.1", "CSRF", "https://www.exploit-db.com/exploits/44624/"]
 modNotes = ["Moderator Log Notes", "1.1", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44754/"]
@@ -105,13 +104,6 @@ def scan(site, upload):
 			print "Version: "+recentThreadIndex[1]
 			print "Vulnerability Type: "+recentThreadIndex[2]
 			print "Information: "+recentThreadIndex[3]
-			print "-"*60
-		elif upload == "mc_craft.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
-			print "Vulnerable Plugin: "+minecraftMyCode[0]
-			print "Version: "+minecraftMyCode[1]
-			print "Vulnerability Type: "+minecraftMyCode[2]
-			print "Information: "+minecraftMyCode[3]
 			print "-"*60
 		elif upload == "lpop.php":
 			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
