@@ -121,7 +121,7 @@ def scan(site, upload):
 			print "Information: "+latestPostProfile[3]
 			print "-"*60
 		elif upload == "adminnotes.php":
-			print color.yellow+"[*] Possibble Vulnerable Plugin!"+color.end
+			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
 			print "Vulnerable Plugin: "+adminNotes[0]
 			print "Version: "+adminNotes[1]
 			print "Vulnerability Type: "+adminNotes[2]
