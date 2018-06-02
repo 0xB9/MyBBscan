@@ -27,9 +27,9 @@ adminNotes = ["Admin Notes", "1.1", "CSRF", "https://www.exploit-db.com/exploits
 modNotes = ["Moderator Log Notes", "1.1", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44754/"]
 advancedStats = ["ChangUonDyU - Advanced Statistics", "1.0.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44795/"]
 
-def banner():
-	print color.green+"MyBBscan\n"+color.end+"By: "+color.blue+"0xB9 "+color.end+"from "+color.blue+"https://LuxorForums.com\n"+color.end
-banner()
+def credits():
+	print color.green+"MyBBscan\n"+color.end+"Made By: "+color.blue+"0xB9\n"+color.end+"Twitter: "+color.blue+"@0xB9sec"+color.end
+credits()
 time.sleep(2)
 
 print "-"*60
@@ -133,7 +133,7 @@ def scan(site, upload):
 			print "Version: "+advancedStats[1]
 			print "Vulnerability Type: "+advancedStats[2]
 			print "Information: "+advancedStats[3]
-			print "-"*60	
+			print "-"*60
 		else:
 			pass
 	else:
