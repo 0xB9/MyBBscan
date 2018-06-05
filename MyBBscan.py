@@ -128,7 +128,7 @@ def scan(site, upload):
 			print "Vulnerability Type: "+modNotes[2]
 			print "Information: "+modNotes[3]
 			print "-"*60
-		elif updoad == "changstats.php":
+		elif upload == "changstats.php":
 			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
 			print "Vulnerable Plugin: "+advancedStats[0]
 			print "Version: "+advancedStats[1]
