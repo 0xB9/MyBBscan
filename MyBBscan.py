@@ -44,7 +44,7 @@ print "-"*60
 
 site = raw_input(lightgreen("Enter MyBB forum URL-> "))
 
-print (lightgreen("[*] Scanning ") + "{}...\n").format(site)
+print (run(lightgreen("Scanning ")) + "{}...\n").format(site)
 print "-"*60
 
 def connection_status(site, plugin_file):
