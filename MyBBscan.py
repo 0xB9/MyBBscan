@@ -1,4 +1,5 @@
 #!/usr/bin/python
+from huepy import * 	#pip install huepy
 import httplib
 import time
 
