@@ -34,16 +34,17 @@ def credits():
 	print lightgreen("MyBBscan")
 	print white("Made By: ") + lightblue("0xB9")
 	print white("Twitter: ") + lightblue("@0xB9sec")
+	print ("")
 credits()
 time.sleep(2)
 
 print "-"*60
-print color.green+"Example:"+color.end+" MyBBforum.com or subdomain.MyBBforum.com"
+print lightgreen("Example: ") + white(" MyBBforum.com or subdomain.MyBBforum.com")
 print "-"*60
 
-site = raw_input(color.green+"Enter MyBB forum URL-> "+color.end)
+site = raw_input(lightgreen("Enter MyBB forum URL-> "))
 
-print (color.green+"[*] Scanning "+color.end+"{}...\n").format(site)
+print (lightgreen("[*] Scanning ") + "{}...\n").format(site)
 print "-"*60
 
 def connection_status(site, plugin_file):
