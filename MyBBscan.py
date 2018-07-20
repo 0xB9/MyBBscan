@@ -31,7 +31,9 @@ recentThreads = ["Recent Threads", "1.0", "Cross-Site Scripting", "https://www.e
 newThreads = ["New Threads", "1.1", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/45057/"]
 
 def credits():
-	print color.green+"MyBBscan\n"+color.end+"Made By: "+color.blue+"0xB9\n"+color.end+"Twitter: "+color.blue+"@0xB9sec"+color.end
+	print lightgreen("MyBBscan")
+	print white("Made By: ") + lightblue("0xB9")
+	print white("Twitter: ") + lightblue("@0xB9sec")
 credits()
 time.sleep(2)
 
