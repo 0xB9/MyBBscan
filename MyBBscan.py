@@ -4,14 +4,6 @@ import httplib
 import time
 
 
-class color:
-	green = '\033[92m'
-	blue = '\033[94m'
-	yellow = '\033[93m'
-	red = '\033[91m'
-	grey = '\033[90m'
-	end = '\033[0m'
-
 files = ['mytabs.php','usersocial.php','myawards.php','myarcade.php','tlink.php','mybbirlastthreadsprofile.php','downloads.php',
 		'recentthread.php','lpop.php','adminnotes.php','modnoteslog.php','changstats.php','recent_threads.php','newthreads.php']
 
