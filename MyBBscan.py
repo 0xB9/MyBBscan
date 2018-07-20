@@ -57,98 +57,98 @@ def scan(site, upload):
 	status = connection_status(site, "/inc/plugins/"+upload)
 	if status == 200:
 		if upload == "mytabs.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print info(bold(yellow("Possible Vulnerable Plugin!")))
 			print "Vulnerable Plugin: "+myTabs[0]
 			print "Version: "+myTabs[1]
 			print "Vulnerability Type: "+myTabs[2]
 			print "Information: "+myTabs[3]
 			print "-"*60
 		elif upload == "usersocial.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print info(bold(yellow("Possible Vulnerable Plugin!")))
 			print "Vulnerable Plugin: "+socialNetworks[0]
 			print "Version: "+socialNetworks[1]
 			print "Vulnerability Type: "+socialNetworks[2]
 			print "Information: "+socialNetworks[3]
 			print "-"*60
 		elif upload == "myawards.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print info(bold(yellow("Possible Vulnerable Plugin!")))
 			print "Vulnerable Plugin: "+myAwards[0]
 			print "Version: "+myAwards[1]
 			print "Vulnerability Type: "+myAwards[2]
 			print "Information: "+myAwards[3]
 			print "-"*60
 		elif upload == "myarcade.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print info(bold(yellow("Possible Vulnerable Plugin!")))
 			print "Vulnerable Plugin: "+myArcade[0]
 			print "Version: "+myArcade[1]
 			print "Vulnerability Type: "+myArcade[2]
 			print "Information: "+myArcade[3]
 			print "-"*60
 		elif upload == "tlink.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print info(bold(yellow("Possible Vulnerable Plugin!")))
 			print "Vulnerable Plugin: "+threadToLink[0]
 			print "Version: "+threadToLink[1]
 			print "Vulnerability Type: "+threadToLink[2]
 			print "Information: "+threadToLink[3]
 			print "-"*60
 		elif upload == "mybbirlastthreadsprofile.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print info(bold(yellow("Possible Vulnerable Plugin!")))
 			print "Vulnerable Plugin: "+lastThreadsProfile[0]
 			print "Version: "+lastThreadsProfile[1]
 			print "Vulnerability Type: "+lastThreadsProfile[2]
 			print "Information: "+lastThreadsProfile[3]
 			print "-"*60
 		elif upload == "downloads.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print info(bold(yellow("Possible Vulnerable Plugin!")))
 			print "Vulnerable Plugin: "+downloads[0]
 			print "Version: "+downloads[1]
 			print "Vulnerability Type: "+downloads[2]
 			print "Information: "+downloads[3]
 			print "-"*60
 		elif upload == "recentthread.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print info(bold(yellow("Possible Vulnerable Plugin!")))
 			print "Vulnerable Plugin: "+recentThreadIndex[0]
 			print "Version: "+recentThreadIndex[1]
 			print "Vulnerability Type: "+recentThreadIndex[2]
 			print "Information: "+recentThreadIndex[3]
 			print "-"*60
 		elif upload == "lpop.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print info(bold(yellow("Possible Vulnerable Plugin!")))
 			print "Vulnerable Plugin: "+latestPostProfile[0]
 			print "Version: "+latestPostProfile[1]
 			print "Vulnerability Type: "+latestPostProfile[2]
 			print "Information: "+latestPostProfile[3]
 			print "-"*60
 		elif upload == "adminnotes.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print info(bold(yellow("Possible Vulnerable Plugin!")))
 			print "Vulnerable Plugin: "+adminNotes[0]
 			print "Version: "+adminNotes[1]
 			print "Vulnerability Type: "+adminNotes[2]
 			print "Information: "+adminNotes[3]
 			print "-"*60
 		elif upload == "modnoteslog.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print info(bold(yellow("Possible Vulnerable Plugin!")))
 			print "Vulnerable Plugin: "+modNotes[0]
 			print "Version: "+modNotes[1]
 			print "Vulnerability Type: "+modNotes[2]
 			print "Information: "+modNotes[3]
 			print "-"*60
 		elif upload == "changstats.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print info(bold(yellow("Possible Vulnerable Plugin!")))
 			print "Vulnerable Plugin: "+advancedStats[0]
 			print "Version: "+advancedStats[1]
 			print "Vulnerability Type: "+advancedStats[2]
 			print "Information: "+advancedStats[3]
 			print "-"*60
 		elif upload == "recent_threads.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print info(bold(yellow("Possible Vulnerable Plugin!")))
 			print "Vulnerable Plugin: "+recentThreads[0]
 			print "Version: "+recentThreads[1]
 			print "Vulnerability Type: "+recentThreads[2]
 			print "Information: "+recentThreads[3]
 			print "-"*60
 		elif upload == "newthreads.php":
-			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print info(bold(yellow("Possible Vulnerable Plugin!")))
 			print "Vulnerable Plugin: "+newThreads[0]
 			print "Version: "+newThreads[1]
 			print "Vulnerability Type: "+newThreads[2]
