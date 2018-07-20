@@ -12,7 +12,7 @@ class color:
 	end = '\033[0m'
 
 files = ['mytabs.php','usersocial.php','myawards.php','myarcade.php','tlink.php','mybbirlastthreadsprofile.php','downloads.php',
-		'recentthread.php','lpop.php','adminnotes.php','modnoteslog.php','changstats.php','recent_threads.php']
+		'recentthread.php','lpop.php','adminnotes.php','modnoteslog.php','changstats.php','recent_threads.php','newthreads.php']
 
 myTabs = ["MyTabs", "1.32", "SQL Injection", "https://www.exploit-db.com/exploits/17595/"]
 socialNetworks = ["User Social Networks", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/34539/"]
@@ -27,6 +27,7 @@ adminNotes = ["Admin Notes", "1.1", "CSRF", "https://www.exploit-db.com/exploits
 modNotes = ["Moderator Log Notes", "1.1", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44754/"]
 advancedStats = ["ChangUonDyU - Advanced Statistics", "1.0.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44795/"]
 recentThreads = ["Recent Threads", "1.0", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44833/"]
+newThreads = ["New Threads", "1.1", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/45057/"]
 
 def credits():
 	print color.green+"MyBBscan\n"+color.end+"Made By: "+color.blue+"0xB9\n"+color.end+"Twitter: "+color.blue+"@0xB9sec"+color.end
@@ -141,6 +142,13 @@ def scan(site, upload):
 			print "Version: "+recentThreads[1]
 			print "Vulnerability Type: "+recentThreads[2]
 			print "Information: "+recentThreads[3]
+			print "-"*60
+		elif upload == "newthreads.php":
+			print color.yellow+"[*] Possible Vulnerable Plugin!"+color.end
+			print "Vulnerable Plugin: "+newThreads[0]
+			print "Version: "+newThreads[1]
+			print "Vulnerability Type: "+newThreads[2]
+			print "Information: "+newThreads[3]
 			print "-"*60
 		else:
 			pass
