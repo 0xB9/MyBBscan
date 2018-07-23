@@ -31,7 +31,7 @@ credits()
 time.sleep(2)
 
 print "-"*60
-print lightgreen("Example: ") + white(" MyBBforum.com or subdomain.MyBBforum.com")
+print lightgreen("Example: ") + white("MyBBforum.com or subdomain.MyBBforum.com")
 print "-"*60
 
 site = raw_input(lightgreen("Enter MyBB forum URL-> "))
