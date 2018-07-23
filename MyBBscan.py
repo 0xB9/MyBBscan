@@ -25,7 +25,7 @@ newThreads = ["New Threads", "1.1", "Cross-Site Scripting", "https://www.exploit
 def credits():
 	print lightgreen("MyBBscan")
 	print white("Made By: ") + lightblue("0xB9")
-	print white("Twitter: ") + lightblue("@0xB9sec")
+	print white("Twitter: ") + lightblue("0xB9sec")
 	print ("")
 credits()
 time.sleep(2)
