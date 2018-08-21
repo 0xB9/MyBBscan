@@ -18,7 +18,7 @@ downloads = ["Downloads", "2.0.3", "Cross-Site Scripting", "https://www.exploit-
 recentThreadIndex = ["Recent Threads On Index", "17.0", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44420/"]
 latestPostProfile = ["Latest Post on Profile", "1.1", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44608/"]
 adminNotes = ["Admin Notes", "1.1", "Cross-Site Request Forgery", "https://www.exploit-db.com/exploits/44624/"]
-modNotes = ["Moderator Log Notes", "1.1", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44754/"]
+modNotes = ["Moderator Log Notes", "1.1", "Cross-Site Scripting & CSRF", "https://www.exploit-db.com/exploits/44754/", "https://www.exploit-db.com/exploits/45224/"]
 advancedStats = ["ChangUonDyU - Advanced Statistics", "1.0.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44795/"]
 recentThreads = ["Recent Threads", "1.0", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44833/"]
 newThreads = ["New Threads", "1.1", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/45057/"]
@@ -125,7 +125,8 @@ def scan(site, upload):
 			print "Vulnerable Plugin: "+modNotes[0]
 			print "Version: "+modNotes[1]
 			print "Vulnerability Type: "+modNotes[2]
-			print "Information: "+modNotes[3]
+			print "XSS: "+modNotes[3]
+			print "CSRF: "+modNotes[4]
 			print "-"*60
 		elif upload == "changstats.php":
 			print info(bold(yellow("Possible Vulnerable Plugin!")))
