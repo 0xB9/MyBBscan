@@ -14,7 +14,7 @@ myAwards = ["MyAwards", "2.3", "CSRF", "https://www.exploit-db.com/exploits/3929
 myArcade = ["My Arcade", "1.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44186/"]
 threadToLink = ["Threads to Link", "1.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44547/"]
 lastThreadsProfile = ["Last User's Threads in Profile", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44339/"]
-downloads = ["Downloads", "2.0.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44400/"]
+downloads = ["Downloads", "2.0.3", "Cross-Site Scripting", "SQLi", "https://www.exploit-db.com/exploits/44400/", "https://www.exploit-db.com/exploits/45747/"]
 recentThreadIndex = ["Recent Threads On Index", "17.0", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44420/"]
 latestPostProfile = ["Latest Post on Profile", "1.1", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44608/"]
 adminNotes = ["Admin Notes", "1.1", "Cross-Site Request Forgery", "https://www.exploit-db.com/exploits/44624/"]
@@ -96,8 +96,9 @@ def scan(site, upload):
 			print info(bold(yellow("Possible Vulnerable Plugin!")))
 			print "Vulnerable Plugin: "+downloads[0]
 			print "Version: "+downloads[1]
-			print "Vulnerability Type: "+downloads[2]
-			print "Information: "+downloads[3]
+			print "Vulnerability Type: "+downloads[2]+" & "+downloads[3]
+			print "XSS: "+downloads[4]
+			print "SQLi: "+downloads[5]
 			print "-"*60
 		elif upload == "recentthread.php":
 			print info(bold(yellow("Possible Vulnerable Plugin!")))
