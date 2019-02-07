@@ -6,7 +6,7 @@ import time
 
 files = ['mytabs.php','usersocial.php','myawards.php','myarcade.php','tlink.php','mybbirlastthreadsprofile.php','downloads.php',
 		'recentthread.php','lpop.php','adminnotes.php','modnoteslog.php','changstats.php','recent_threads.php','newthreads.php',
-		'thankyoulike.php','ougc_awards.php']
+		'thankyoulike.php','ougc_awards.php','ip_history_logs.php']
 
 myTabs = ["MyTabs", "1.32", "SQL Injection", "https://www.exploit-db.com/exploits/17595/"]
 socialNetworks = ["User Social Networks", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/34539/"]
@@ -24,6 +24,7 @@ recentThreads = ["Recent Threads", "1.0", "Cross-Site Scripting", "https://www.e
 newThreads = ["New Threads", "1.1", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/45057/"]
 thankyouLike = ["Thank You/Like", "3.0.0", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/45178/"]
 ougcAwards =["OUGC Awards", "1.8.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/46080/"]
+ipLogs = ["User IP History Logs", "1.0.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/46273/"]
 
 def credits():
 	print lightgreen("MyBBscan")
@@ -164,6 +165,13 @@ def scan(site, upload):
 			print "Version: "+ougcAwards[1]
 			print "Vulnerability Type: "+ougcAwards[2]
 			print "Information: "+ougcAwards[3]
+			print "-"*60
+		elif upload == "ip_history_logs.php":
+			print info(bold(yellow("Possible Vulnerable Plugin!")))
+			print "Vulnerable Plugin: "+ipLogs[0]
+			print "Version: "+ipLogs[1]
+			print "Vulnerability Type: "+ipLogs[2]
+			print "Information: "+ipLogs[3]
 			print "-"*60
 		else:
 			pass
