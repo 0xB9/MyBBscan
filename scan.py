@@ -23,7 +23,7 @@ advancedStats = ["ChangUonDyU - Advanced Statistics", "1.0.2", "Cross-Site Scrip
 recentThreads = ["Recent Threads", "1.0", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/44833/"]
 newThreads = ["New Threads", "1.1", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/45057/"]
 thankyouLike = ["Thank You/Like", "3.0.0", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/45178/"]
-ougcAwards =["OUGC Awards", "1.8.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/46080/"]
+ougcAwards = ["OUGC Awards", "1.8.3", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/46080/"]
 ipLogs = ["User IP History Logs", "1.0.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/46273/"]
 
 def credits():
