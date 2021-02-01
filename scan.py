@@ -6,7 +6,8 @@ import time
 
 files = ['mytabs.php','usersocial.php','myawards.php','myarcade.php','tlink.php','mybbirlastthreadsprofile.php','downloads.php',
 		'recentthread.php','lpop.php','adminnotes.php','modnoteslog.php','changstats.php','recent_threads.php','newthreads.php',
-		'thankyoulike.php','ougc_awards.php','ip_history_logs.php','trashbin.php','timeline_cp.php','threadredirect.php']
+		'thankyoulike.php','ougc_awards.php','ip_history_logs.php','trashbin.php','timeline_cp.php','threadredirect.php',
+		'trends.php']
 
 myTabs = ["MyTabs", "1.32", "SQL Injection", "https://www.exploit-db.com/exploits/17595/"]
 socialNetworks = ["User Social Networks", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/34539/"]
@@ -28,6 +29,7 @@ ipLogs = ["User IP History Logs", "1.0.2", "Cross-Site Scripting", "https://www.
 trashbin = ["Trash Bin", "1.1.3", "Cross-Site Scripting & CSRF", "https://www.exploit-db.com/exploits/46384"]
 timeline = ["Timeline", "1.0", "Cross-Site Scripting & CSRF", "https://www.exploit-db.com/exploits/49467"]
 threadRedirect = ["Thread Redirect", "0.2.1", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/49505"]
+trendWidget = ["Trending Widget", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/49504"]
 
 def credits():
 	print (lightgreen("MyBBscan"))
@@ -196,7 +198,14 @@ def scan(site, upload):
 			print ("Version: "+threadRedirect[1])
 			print ("Vulnerability Type: "+threadRedirect[2])
 			print ("Information: "+threadRedirect[3])
-			print ("-"*60)		
+			print ("-"*60)
+		elif upload == "trends.php":
+			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
+			print ("Vulnerable Plugin: "+trendWidget[0])
+			print ("Version: "+trendWidget[1])
+			print ("Vulnerability Type: "+trendWidget[2])
+			print ("Information: "+trendWidget[3])
+			print ("-"*60)			
 		else:
 			pass
 	else:
