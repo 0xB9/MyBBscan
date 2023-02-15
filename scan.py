@@ -13,12 +13,12 @@ credits()
 time.sleep(2)
 
 print ("-"*60)
-print (lightgreen("Example: ") + white("MyBBforum.com or subdomain.MyBBforum.com"))
+print (lightgreen("Examples:\n") + white("https://MyBBforum.com/ \nhttps://MyBBforum.com/forum/ \nhttps://subdomain.MyBBforum.com/ \nhttps://127.0.0.1/"))
 print ("-"*60)
 
 site = input(lightgreen("Enter MyBB forum URL-> "))
 
-print (run(lightgreen(f"Scanning ") + bold(red(site + "...\n"))))
+print (run(lightgreen(f"Scanning-> ") + bold(red(site))))
 print ("-"*60)
 
 def connection_status(site, index_file):
