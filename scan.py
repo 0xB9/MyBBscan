@@ -1,7 +1,7 @@
 #!/usr/bin/python
 from huepy import * 	#pip install huepy
 from plugins import *
-import http.client
+import requests
 import time
 
 def credits():
@@ -18,17 +18,16 @@ print ("-"*60)
 
 site = input(lightgreen("Enter MyBB forum URL-> "))
 
-print (run(lightgreen("Scanning ") + bold(red("{}".format(site)))))
+print (run(lightgreen(f"Scanning ") + bold(red(site + "...\n"))))
 print ("-"*60)
 
-def connection_status(site, plugin_file):
-    connection = http.client.HTTPSConnection(site)
-    connection.request("HEAD", plugin_file)
-    return connection.getresponse().status
+def connection_status(site, index_file):
+    response = requests.head(f"{site}/inc/plugins/{index_file}")
+    return response.status_code
 
 
 def scan(site, upload):
-	status = connection_status(site, "/inc/plugins/"+upload)
+	status = connection_status(site, upload)
 	if status == 200:
 		if upload == "mytabs.php":
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
