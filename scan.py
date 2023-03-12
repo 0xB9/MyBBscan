@@ -20,6 +20,13 @@ print ("-"*60)
 
 site = input(lightgreen("Enter MyBB forum URL-> "))
 
+def close():
+	if site == "":
+		print()
+		print (good(lightgreen("MyBBscan closed successfully.")))
+		raise SystemExit
+close()	
+
 print (run(lightgreen(f"Scanning-> ") + bold(red(site))))
 print ("-"*60)
 
