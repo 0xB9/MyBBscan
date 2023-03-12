@@ -211,4 +211,4 @@ for upload in files:
 
 print ()
 print (good(lightgreen("Scan complete!")))
-exit()
+raise SystemExit
