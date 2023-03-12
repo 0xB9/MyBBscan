@@ -26,7 +26,7 @@ def close():
 		raise SystemExit
 close()	
 
-print (run(lightgreen(f"Scanning-> ") + bold(red(site))))
+print (run(lightgreen("Scanning-> ") + bold(red(site))))
 print ("-"*60)
 
 def connection_status(site, index_file):
