@@ -7,7 +7,6 @@ import time
 def credits():
 	version = "3.0"
 	print (lightgreen("MyBBscan - v" + version))
-	#print (white("Version: ") + lightblue("3.0"))
 	print (white("Made By: ") + lightblue("0xB9"))
 	print (white("Twitter: ") + lightblue("0xB9sec"))
 	print ("")
