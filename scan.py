@@ -209,7 +209,6 @@ def scan(site, upload):
 for upload in files:
 	scan(site, upload)
 
-print ("")
+print ()
 print (good(lightgreen("Scan complete!")))
-print ("")
 exit()
