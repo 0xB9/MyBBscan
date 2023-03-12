@@ -30,49 +30,49 @@ def connection_status(site, index_file):
 def scan(site, upload):
 	status = connection_status(site, upload)
 	if status == 200:
-		if upload == "mytabs.php":
+		if upload == files[0]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+myTabs[0])
 			print ("Version: "+myTabs[1])
 			print ("Vulnerability Type: "+myTabs[2])
 			print ("Information: "+myTabs[3])
 			print ("-"*60)
-		elif upload == "usersocial.php":
+		elif upload == files[1]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+socialNetworks[0])
 			print ("Version: "+socialNetworks[1])
 			print ("Vulnerability Type: "+socialNetworks[2])
 			print ("Information: "+socialNetworks[3])
 			print ("-"*60)
-		elif upload == "myawards.php":
+		elif upload == files[2]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+myAwards[0])
 			print ("Version: "+myAwards[1])
 			print ("Vulnerability Type: "+myAwards[2])
 			print ("Information: "+myAwards[3])
 			print ("-"*60)
-		elif upload == "myarcade.php":
+		elif upload == files[3]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+myArcade[0])
 			print ("Version: "+myArcade[1])
 			print ("Vulnerability Type: "+myArcade[2])
 			print ("Information: "+myArcade[3])
 			print ("-"*60)
-		elif upload == "tlink.php":
+		elif upload == files[4]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+threadToLink[0])
 			print ("Version: "+threadToLink[1])
 			print ("Vulnerability Type: "+threadToLink[2])
 			print ("Information: "+threadToLink[3])
 			print ("-"*60)
-		elif upload == "mybbirlastthreadsprofile.php":
+		elif upload == files[5]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+lastThreadsProfile[0])
 			print ("Version: "+lastThreadsProfile[1])
 			print ("Vulnerability Type: "+lastThreadsProfile[2])
 			print ("Information: "+lastThreadsProfile[3])
 			print ("-"*60)
-		elif upload == "downloads.php":
+		elif upload == files[6]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+downloads[0])
 			print ("Version: "+downloads[1])
@@ -80,28 +80,28 @@ def scan(site, upload):
 			print ("XSS: "+downloads[4])
 			print ("SQLi: "+downloads[5])
 			print ("-"*60)
-		elif upload == "recentthread.php":
+		elif upload == files[7]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+recentThreadIndex[0])
 			print ("Version: "+recentThreadIndex[1])
 			print ("Vulnerability Type: "+recentThreadIndex[2])
 			print ("Information: "+recentThreadIndex[3])
 			print ("-"*60)
-		elif upload == "lpop.php":
+		elif upload == files[8]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+latestPostProfile[0])
 			print ("Version: "+latestPostProfile[1])
 			print ("Vulnerability Type: "+latestPostProfile[2])
 			print ("Information: "+latestPostProfile[3])
 			print ("-"*60)
-		elif upload == "adminnotes.php":
+		elif upload == files[9]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+adminNotes[0])
 			print ("Version: "+adminNotes[1])
 			print ("Vulnerability Type: "+adminNotes[2])
 			print ("Information: "+adminNotes[3])
 			print ("-"*60)
-		elif upload == "modnoteslog.php":
+		elif upload == files[10]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+modNotes[0])
 			print ("Version: "+modNotes[1])
@@ -109,84 +109,84 @@ def scan(site, upload):
 			print ("XSS: "+modNotes[3])
 			print ("CSRF: "+modNotes[4])
 			print ("-"*60)
-		elif upload == "changstats.php":
+		elif upload == files[11]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+advancedStats[0])
 			print ("Version: "+advancedStats[1])
 			print ("Vulnerability Type: "+advancedStats[2])
 			print ("Information: "+advancedStats[3])
 			print ("-"*60)
-		elif upload == "recent_threads.php":
+		elif upload == files[12]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+recentThreads[0])
 			print ("Version: "+recentThreads[1])
 			print ("Vulnerability Type: "+recentThreads[2])
 			print ("Information: "+recentThreads[3])
 			print ("-"*60)
-		elif upload == "newthreads.php":
+		elif upload == files[13]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+newThreads[0])
 			print ("Version: "+newThreads[1])
 			print ("Vulnerability Type: "+newThreads[2])
 			print ("Information: "+newThreads[3])
 			print ("-"*60)
-		elif upload == "thankyoulike.php":
+		elif upload == files[14]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+thankyouLike[0])
 			print ("Version: "+thankyouLike[1])
 			print ("Vulnerability Type: "+thankyouLike[2])
 			print ("Information: "+thankyouLike[3])
 			print ("-"*60)
-		elif upload == "ougc_awards.php":
+		elif upload == files[15]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+ougcAwards[0])
 			print ("Version: "+ougcAwards[1])
 			print ("Vulnerability Type: "+ougcAwards[2])
 			print ("Information: "+ougcAwards[3])
 			print ("-"*60)
-		elif upload == "ip_history_logs.php":
+		elif upload == files[16]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+ipLogs[0])
 			print ("Version: "+ipLogs[1])
 			print ("Vulnerability Type: "+ipLogs[2])
 			print ("Information: "+ipLogs[3])
 			print ("-"*60)
-		elif upload == "trashbin.php":
+		elif upload == files[17]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+trashbin[0])
 			print ("Version: "+trashbin[1])
 			print ("Vulnerability Type: "+trashbin[2])
 			print ("Information: "+trashbin[3])
 			print ("-"*60)
-		elif upload == "timeline_cp.php":
+		elif upload == files[18]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+timeline[0])
 			print ("Version: "+timeline[1])
 			print ("Vulnerability Type: "+timeline[2])
 			print ("Information: "+timeline[3])
 			print ("-"*60)
-		elif upload == "threadredirect.php":
+		elif upload == files[19]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+threadRedirect[0])
 			print ("Version: "+threadRedirect[1])
 			print ("Vulnerability Type: "+threadRedirect[2])
 			print ("Information: "+threadRedirect[3])
 			print ("-"*60)
-		elif upload == "trends.php":
+		elif upload == files[20]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+trendWidget[0])
 			print ("Version: "+trendWidget[1])
 			print ("Vulnerability Type: "+trendWidget[2])
 			print ("Information: "+trendWidget[3])
 			print ("-"*60)
-		elif upload == "deleteaccount.php":
+		elif upload == files[21]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+deleteAccount[0])
 			print ("Version: "+deleteAccount[1])
 			print ("Vulnerability Type: "+deleteAccount[2])
 			print ("Information: "+deleteAccount[3])
 			print ("-"*60)
-		elif upload == "ougc_feedback.php":
+		elif upload == files[22]:
 			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
 			print ("Vulnerable Plugin: "+ougcFeedback[0])
 			print ("Version: "+ougcFeedback[1])
