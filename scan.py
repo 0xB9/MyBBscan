@@ -9,7 +9,7 @@ def credits():
 	print (lightgreen("MyBBscan - v" + version))
 	print (white("Made By: ") + lightblue("0xB9"))
 	print (white("Twitter: ") + lightblue("0xB9sec"))
-	print ("")
+	print ()
 credits()
 time.sleep(2)
 
