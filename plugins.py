@@ -1,7 +1,7 @@
 files = ['mytabs.php','usersocial.php','myawards.php','myarcade.php','tlink.php','mybbirlastthreadsprofile.php','downloads.php',
 		'recentthread.php','lpop.php','adminnotes.php','modnoteslog.php','changstats.php','recent_threads.php','newthreads.php',
 		'thankyoulike.php','ougc_awards.php','ip_history_logs.php','trashbin.php','timeline_cp.php','threadredirect.php',
-		'trends.php','deleteaccount.php','ougc_feedback.php','upcoming_events.php']
+		'trends.php','deleteaccount.php','ougc_feedback.php','upcoming_events.php','hidetillreply.php']
 
 myTabs = ["MyTabs", "1.32", "SQL Injection", "https://www.exploit-db.com/exploits/36005"]
 socialNetworks = ["User Social Networks", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/34539"]
@@ -27,3 +27,4 @@ trendWidget = ["Trending Widget", "1.2", "Cross-Site Scripting", "https://packet
 deleteAccount = ["Delete Account", "1.4", "Cross-Site Scripting", "https://packetstormsecurity.com/files/161216/MyBB-Delete-Account-1.4-Cross-Site-Scripting.html"]
 ougcFeedback = ["OUGC Feedback", "1.8.22", "Cross-Site Scripting", "https://packetstormsecurity.com/files/161746/MyBB-OUGC-Feedback-1.8.22-Cross-Site-Scripting.html"]
 upcomingEvents = ["Upcoming Events", "1.32", "Cross-Site Scripting", "https://packetstormsecurity.com/files/152152/MyBB-Upcoming-Events-1.32-Cross-Site-Scripting.html"]
+hideThreadContent = ["Hide Thread Content", "1.0", "Information Disclosure", "https://packetstormsecurity.com/files/161185/MyBB-Hide-Thread-Content-1.0-Information-Disclosure.html"]

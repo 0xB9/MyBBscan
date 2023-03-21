@@ -206,7 +206,14 @@ def scan(site, upload):
 			print ("Version: "+upcomingEvents[1])
 			print ("Vulnerability Type: "+upcomingEvents[2])
 			print ("Information: "+upcomingEvents[3])
-			print ("-"*60)						
+			print ("-"*60)
+		elif upload == files[24]:
+			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
+			print ("Vulnerable Plugin: "+hideThreadContent[0])
+			print ("Version: "+hideThreadContent[1])
+			print ("Vulnerability Type: "+hideThreadContent[2])
+			print ("Information: "+hideThreadContent[3])
+			print ("-"*60)							
 		else:
 			pass
 	else:
