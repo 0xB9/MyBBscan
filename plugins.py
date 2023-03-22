@@ -28,6 +28,6 @@ trendWidget = ["Trending Widget", "1.2", "Cross-Site Scripting", "https://packet
 deleteAccount = ["Delete Account", "1.4", "Cross-Site Scripting", "https://packetstormsecurity.com/files/161216/MyBB-Delete-Account-1.4-Cross-Site-Scripting.html"]
 ougcFeedback = ["OUGC Feedback", "1.8.22", "Cross-Site Scripting", "https://packetstormsecurity.com/files/161746/MyBB-OUGC-Feedback-1.8.22-Cross-Site-Scripting.html"]
 upcomingEvents = ["Upcoming Events", "1.32", "Cross-Site Scripting", "https://packetstormsecurity.com/files/152152/MyBB-Upcoming-Events-1.32-Cross-Site-Scripting.html"]
-hideThreadContent = ["Hide Thread Content", "1.0", "Information Disclosure", "https://packetstormsecurity.com/files/161185/MyBB-Hide-Thread-Content-1.0-Information-Disclosure.html"]
+hideThreadContent = ["Hide Thread Content", "1.0", "Broken Access Control", "https://packetstormsecurity.com/files/161185/MyBB-Hide-Thread-Content-1.0-Information-Disclosure.html"]
 activeThreads = ["Active Threads", "1.3.0", "Cross-Site Scripting", "https://packetstormsecurity.com/files/171402/MyBB-Active-Threads-1.3.0-Cross-Site-Scripting.html"]
 externalRedirectWarn = ["External Redirect Warning", "1.3", "Cross-Site Scripting", "https://packetstormsecurity.com/files/171403/MyBB-External-Redirect-Warning-1.3-Cross-Site-Scripting.html"]
