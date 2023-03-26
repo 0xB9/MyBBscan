@@ -227,7 +227,14 @@ def scan(site, upload):
 			print ("Version: "+externalRedirectWarn[1])
 			print ("Vulnerability Type: "+externalRedirectWarn[2])
 			print ("Information: "+externalRedirectWarn[3])
-			print ("-"*140)							
+			print ("-"*140)
+		elif upload == files[27]:
+			print (info(bold(yellow("Possible Vulnerable Plugin!"))))
+			print ("Vulnerable Plugin: "+exportUser[0])
+			print ("Version: "+exportUser[1])
+			print ("Vulnerability Type: "+exportUser[2])
+			print ("Information: "+exportUser[3])
+			print ("-"*140)								
 		else:
 			pass
 	else:
