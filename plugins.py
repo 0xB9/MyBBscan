@@ -4,6 +4,9 @@ files = ['mytabs.php','usersocial.php','myawards.php','myarcade.php','tlink.php'
 		'trends.php','deleteaccount.php','ougc_feedback.php','upcoming_events.php','hidetillreply.php','activethreads.php',
         'iblinkwarning.php','export_user.php']
 
+vuln = "Vulnerable Plugin!"
+possible = "Possible Vulnerable Plugin!"
+
 myTabs = ["MyTabs", "1.32", "SQL Injection", "https://www.exploit-db.com/exploits/36005"]
 socialNetworks = ["User Social Networks", "1.2", "Cross-Site Scripting", "https://www.exploit-db.com/exploits/34539"]
 myAwards = ["MyAwards", "2.3", "CSRF", "https://www.exploit-db.com/exploits/39290"]
