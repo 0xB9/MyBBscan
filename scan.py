@@ -1,6 +1,7 @@
 #!/usr/bin/python
 from huepy import * 	#pip install huepy
 from plugins import *
+from version_check import *
 import requests
 import time
 
@@ -12,6 +13,17 @@ def credits():
 	print (white("Twitter: ") + lightblue("0xB9sec"))
 	print ()
 credits()
+
+def checkVersion():
+	if response.ok:
+		if latest_version == version:
+			print("You are up to date")
+		else:
+			print(f"You are out of date. The latest version is {latest_version}")
+			print("Visit https://github.com/0xB9/MyBBscan/releases to download the latest version.")
+	else:
+		print(f"Failed to get release information for {repo}.")
+checkVersion()
 time.sleep(2)
 
 print ("-"*60)
