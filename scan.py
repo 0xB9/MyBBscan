@@ -5,7 +5,7 @@ from version_check import *
 import requests
 import time
 
-version = "v2.1"
+version = "v3.0"
 
 def credits():
 	print (lightgreen("MyBBscan - " + version))
