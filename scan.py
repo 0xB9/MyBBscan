@@ -17,12 +17,15 @@ credits()
 def checkVersion():
 	if response.ok:
 		if latest_version == version:
-			print("You are up to date")
+			print (good(lightgreen("MyBBscan is up to date")))
+			print ()
 		else:
-			print(f"You are out of date. The latest version is {latest_version}")
-			print("Visit https://github.com/0xB9/MyBBscan/releases to download the latest version.")
+			print (bad(red(f"MyBBscan out of date. The latest version is {latest_version}")))
+			print (info(white("Visit https://github.com/0xB9/MyBBscan/releases to download the latest version.")))
+			print ()
 	else:
-		print(f"Failed to get release information for {repo}.")
+		print (info(yellow(f"Failed to get release information for {repo}, try again later.")))
+		print ()
 checkVersion()
 time.sleep(2)
 
