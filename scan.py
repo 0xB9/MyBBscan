@@ -4,9 +4,10 @@ from plugins import *
 import requests
 import time
 
+version = "v2.1"
+
 def credits():
-	version = "3.0"
-	print (lightgreen("MyBBscan - v" + version))
+	print (lightgreen("MyBBscan - " + version))
 	print (white("Made By: ") + lightblue("0xB9"))
 	print (white("Twitter: ") + lightblue("0xB9sec"))
 	print ()
