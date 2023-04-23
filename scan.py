@@ -37,7 +37,7 @@ site = input(lightgreen("Enter MyBB forum URL-> "))
 
 def close():
 	if site == "":
-		print()
+		print ()
 		print (good(lightgreen("MyBBscan closed successfully.")))
 		raise SystemExit
 close()	
