@@ -5,10 +5,8 @@ from version_check import *
 import requests
 import time
 
-version = "v3.0"
-
 def credits():
-	print (lightgreen("MyBBscan - " + version))
+	print (lightgreen("MyBBscan - " + currentVersion))
 	print (white("Made By: ") + lightblue("0xB9"))
 	print (white("Twitter: ") + lightblue("0xB9sec"))
 	print ()
@@ -16,11 +14,11 @@ credits()
 
 def checkVersion():
 	if response.ok:
-		if latest_version == version:
+		if latestVersion == currentVersion:
 			print (good(lightgreen("MyBBscan is up to date")))
 			print ()
 		else:
-			print (bad(red(f"MyBBscan out of date. The latest version is {latest_version}")))
+			print (bad(red(f"MyBBscan out of date. The latest version is {latestVersion}")))
 			print (info(white("Visit https://github.com/0xB9/MyBBscan/releases/latest to download the latest version.")))
 			print ()
 	else:
