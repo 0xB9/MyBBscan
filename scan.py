@@ -16,18 +16,18 @@ def checkVersion():
 	if response.ok:
 		if latestVersion == currentVersion:
 			print (good(lightgreen("MyBBscan is up to date")))
-			print ()
+			print ("-"*60)
 		else:
 			print (bad(red(f"MyBBscan out of date. The latest version is {latestVersion}")))
 			print (info(white("Visit https://github.com/0xB9/MyBBscan/releases/latest to download the latest version.")))
-			print ()
+			print ("-"*95)
 	else:
 		print (info(yellow(f"Failed to check for updates, try again later.")))
-		print ()
+		print ("-"*60)
 checkVersion()
 time.sleep(2)
 
-print ("-"*60)
+print ()
 print (lightgreen("Examples:\n") + white("https://MyBBforum.com/ \nhttps://MyBBforum.com/forum/ \nhttps://subdomain.MyBBforum.com/ \nhttps://127.0.0.1/"))
 print ("-"*60)
 
