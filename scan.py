@@ -22,7 +22,7 @@ def checkVersion():
 			print (info(white("Visit https://github.com/0xB9/MyBBscan/releases/latest to download the latest version.")))
 			print ()
 	else:
-		print (info(yellow(f"Failed to get release information for {repo}, try again later.")))
+		print (info(yellow(f"Failed to check for updates, try again later.")))
 		print ()
 checkVersion()
 time.sleep(2)
