@@ -32,8 +32,8 @@ close()
 print (run(lightgreen("Scanning-> ") + bold(red(site))))
 print ("-"*60)
 
-def connection_status(site, index_file):
-    response = requests.head(f"{site}/inc/plugins/{index_file}")
+def connection_status(site, plugin_file):
+    response = requests.head(f"{site}/inc/plugins/{plugin_file}")
     return response.status_code
 
 def scan(site, upload):
