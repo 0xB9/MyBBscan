@@ -1,7 +1,7 @@
 #!/usr/bin/python
 from huepy import * 	#pip install huepy
-from plugins import *
-from version_check import *
+from utils.plugins import *
+from utils.version_check import *
 import requests
 import time
 
