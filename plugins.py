@@ -2,7 +2,7 @@ files = ['mytabs.php','usersocial.php','myawards.php','myarcade.php','tlink.php'
 		'recentthread.php','lpop.php','adminnotes.php','modnoteslog.php','changstats.php','recent_threads.php','newthreads.php',
 		'thankyoulike.php','ougc_awards.php','ip_history_logs.php','trashbin.php','timeline_cp.php','threadredirect.php',
 		'trends.php','deleteaccount.php','ougc_feedback.php','upcoming_events.php','hidetillreply.php','activethreads.php',
-        'iblinkwarning.php','export_user.php']
+        'iblinkwarning.php','export_user.php','favicon.php']
 
 vuln = "Vulnerable Plugin!"
 possible = "Possible Vulnerable Plugin!"
@@ -35,3 +35,4 @@ hideThreadContent = ["Hide Thread Content", "1.0", "Broken Access Control", "htt
 activeThreads = ["Active Threads", "1.3.0", "Cross-Site Scripting", "https://packetstormsecurity.com/files/171402/MyBB-Active-Threads-1.3.0-Cross-Site-Scripting.html"]
 externalRedirectWarn = ["External Redirect Warning", "1.3", "Cross-Site Scripting", "https://packetstormsecurity.com/files/171403/MyBB-External-Redirect-Warning-1.3-Cross-Site-Scripting.html"]
 exportUser = ["Export User", "2.0", "Cross-Site Scripting", "https://packetstormsecurity.com/files/171421/MyBB-Export-User-2.0-Cross-Site-Scripting.html"]
+pmgFavicon = ["PGM Favicon", "1.0", "Cross-Site Scripting", "https://packetstormsecurity.com/files/173139/MyBB-Favicon-1.0-Cross-Site-Scripting.html"]

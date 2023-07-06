@@ -236,6 +236,13 @@ def scan(site, upload):
 			print ("Version: "+exportUser[1])
 			print ("Vulnerability Type: "+exportUser[2])
 			print ("Information: "+exportUser[3])
+			print ("-"*140)	
+		elif upload == files[28]:
+			print (info(bold(yellow( possible ))))
+			print ("Vulnerable Plugin: "+pgmFavicon[0])
+			print ("Version: "+pgmFavicon[1])
+			print ("Vulnerability Type: "+pgmFavicon[2])
+			print ("Information: "+pgmFavicon[3])
 			print ("-"*140)								
 		else:
 			pass
