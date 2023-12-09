@@ -2,7 +2,7 @@ from huepy import *
 import requests
 import json
 
-currentVersion = "v3.1.0"
+currentVersion = "v3.2.0"
 repo = "https://api.github.com/repos/0xB9/MyBBscan/releases/latest"
 
 response = requests.get(repo)
